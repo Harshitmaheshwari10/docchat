@@ -41,6 +41,6 @@ npx serve .
 - No credit card required
 
 ## Tech used
-- Google Gemini 2.0 Flash (free API)
+- Google Gemini 2.0 Flash 
 - PDF.js for in-browser PDF extraction
 - Vanilla HTML/CSS/JS — zero dependencies to install
