@@ -35,11 +35,6 @@ npx serve .
 2. Paste it into the key field at the top of the app
 3. Upload a PDF or TXT file and start chatting!
 
-## Free tier limits
-- 1,500 requests/day
-- 1 million tokens/minute
-- No credit card required
-
 ## Tech used
 - Google Gemini 2.0 Flash 
 - PDF.js for in-browser PDF extraction
