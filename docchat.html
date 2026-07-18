@@ -303,6 +303,11 @@ function exportChat() {
   a.href = url; a.download = 'docchat-export.html'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
   addMessage('ai', 'Chat exported! Open the downloaded file in any browser and use File → Print → Save as PDF.');
 }
+  function copyChat() {
+  if (!chatHistory.length) { alert('No chat to copy yet.'); return; }
+  const text = chatHistory.map(m => '[' + (m.role === 'ai' ? 'AI' : 'You') + ']\n' + m.content).join('\n\n---\n\n');
+  navigator.clipboard.writeText(text).then(() => addMessage('ai', 'Chat copied to clipboard!'));
+}
 </script>
 </body>
 </html>
